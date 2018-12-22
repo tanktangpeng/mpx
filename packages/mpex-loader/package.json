@@ -1,0 +1,26 @@
+{
+  "name": "@mpxjs/mpex-loader",
+  "version": "1.0.0",
+  "description": "a webpack loader for mpex",
+  "author": "WayneHu",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "src": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "de-indent": "^1.0.2",
+    "hash-sum": "^1.0.2",
+    "he": "^1.2.0",
+    "lru-cache": "^4.1.2"
+  }
+}
