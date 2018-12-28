@@ -6,8 +6,6 @@
   "homepage": "https://github.com/didi/mpx#readme",
   "license": "ISC",
   "main": "wx/index",
-  "vueMain": "vue/index",
-  "wxMain": "wx/index",
   "mpex": true,
   "directories": {
     "lib": "lib",

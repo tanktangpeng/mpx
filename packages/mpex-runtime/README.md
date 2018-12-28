@@ -1,11 +1,13 @@
 # `mpex-runtime`
+mpex运行时跨端源码，编译时进行平台识别和智能加载，运行时提供统一API抹平平台差异
 
-> TODO: description
+符合`mpex`跨端源码规范的包
 
-## Usage
 
-```
-const mpexRuntime = require('mpex-runtime');
+## `mpex`跨端源码规范
+源码通过目录将不同平台的源码分开放置，具有相同的层级结构和文件名，以及相同的模块暴露方式
 
-// TODO: DEMONSTRATE API
-```
+在`package.json`的`mpex`字段标注平台的入口目录。
+
+默认是`wx` `ali` `vue`
+
