@@ -6,10 +6,10 @@ const DEFAULT_DIR = {
 }
 
 module.exports = class MpexResolvePlugin {
-  constructor (source, options, target) {
-    this.source = source
+  constructor (options) {
+    this.source = 'before-described-relative'
     this.options = options
-    this.target = target
+    this.target = 'resolve'
   }
 
   apply (resolver) {

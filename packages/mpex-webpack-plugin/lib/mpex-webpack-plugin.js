@@ -14,7 +14,7 @@ class MpexWebpackPlugin {
             let plugins = resolveOptions.plugins || (resolveOptions.plugins = [])
             let has = plugins.some(i => i instanceof MpexResolvePlugin)
             if (!has) {
-              plugins.push(new MpexResolvePlugin('before-described-relative', { mode: this.options.mode }, 'resolve'))
+              plugins.push(new MpexResolvePlugin({ mode: this.options.mode }))
             }
           } else {
             resolveOptions = {}
