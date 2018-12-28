@@ -1,3 +1,5 @@
-export default function router () {
-  console.log('i am wx router')
+import { store } from './store'
+export function router () {
+  console.log('i am router in wx')
+  store()
 }

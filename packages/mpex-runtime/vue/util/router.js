@@ -1,3 +1,5 @@
-export default function router () {
-  console.log('i am vue router')
+import { store } from './store'
+export function router () {
+  console.log('i am router in vue')
+  store()
 }
