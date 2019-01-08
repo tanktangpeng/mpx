@@ -1,19 +1,19 @@
 const async = require('async')
 const loaderUtils = require('loader-utils')
 
-function makeRoutes (components) {
+function makeRoutes ({ pages }) {
   let result = ''
   result += '['
-  let component = Object.keys(components).map(i => {
-    let routePrifix = components[i][0] === '/' ? '' : '/'
-    return `{path: "${routePrifix}${components[i]}", component: ${i}}`
+  let component = Object.keys(pages).map(i => {
+    let routePrifix = pages[i][0] === '/' ? '' : '/'
+    return `{path: "${routePrifix}${pages[i]}", component: ${i}}`
   }).join(',')
   result += (component + ']')
 
   return result
 }
 
-function makeComponents (components) {
+function makeComponents ({ components }) {
   let result = ''
   result += '{'
   let component = Object.keys(components).map(i => {
@@ -37,6 +37,7 @@ function makeRender () {
     }
   `
 }
+
 function makeVueRuntime (options) {
   let rawScriptSrc = options.rawScriptSrc
   let context = options.context
@@ -45,7 +46,9 @@ function makeVueRuntime (options) {
     let requireComponents = {}
     async.waterfall([
       (callback) => {
-        async.eachOf(options.components, (path, component, callback) => {
+        let allComponents = Object.assign({}, options.components, options.pages)
+        // 收集json中的usingComponents和pages用到的组件列表
+        async.eachOf(allComponents, (path, component, callback) => {
           options.resolve(context, path, (err, result, info) => {
             if (err) {
               callback(err)
@@ -74,9 +77,10 @@ function makeVueRuntime (options) {
         src += `let injectOptions = {}\n`
         if (options.type === 'app') {
           src += `injectOptions.render = ${makeRender()}\n`
-          src += `injectOptions.routes = ${makeRoutes(options.components)}\n`
+          src += `injectOptions.routes = ${makeRoutes(options)}\n`
+          src += `injectOptions.globalComponents = ${makeComponents(options)}\n`
         } else {
-          src += `injectOptions.components = ${makeComponents(options.components)}\n`
+          src += `injectOptions.components = ${makeComponents(options)}\n`
         }
 
         // components

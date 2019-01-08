@@ -25,7 +25,6 @@ function compile (content, options) {
     } catch (e) {}
 
     transpilerOptions = new NormalizeOptions(options)
-    transpilerOptions.loaderContext = loaderContext
 
     if (transpilerOptions.mode === 'vue') {
       delete vueSfc.json

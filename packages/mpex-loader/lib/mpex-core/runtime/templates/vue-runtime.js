@@ -10,6 +10,11 @@ function normalizeOptions (type, option, extendOption) {
         routes: extendOption.routes
       })
     }
+    if (extendOption.globalComponents) {
+      Object.keys(extendOption.globalComponents).forEach(i => {
+        Vue.component(i, extendOption.globalComponents[i])
+      })
+    }
     option.render = extendOption.render
     return option
   } else if (type === 'component') {

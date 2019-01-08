@@ -3,9 +3,11 @@ const cache = require('./utils/cache')
 const mpex = require('./mpex-core')
 const hash = require('hash-sum')
 
+// TBD 补充参数，用来做缓存
 const hashKeys = []
 
 function mergeOption (loaderOptions, queryOptions) {
+  // query配置优先级更高
   return Object.assign({}, loaderOptions, queryOptions)
 }
 
@@ -19,7 +21,10 @@ module.exports = function (content) {
 
   // loader options from webpack
   const options = loaderUtils.getOptions(this) || {}
+
+  // merge options
   const mergedOptions = mergeOption(options, queryObj)
+
   const rootResource = this._compilation.entries[0].resource
 
   // vue-loader会在资源query拼接自己的参数，这些参数不由用户拼接
@@ -37,8 +42,8 @@ module.exports = function (content) {
     let type = filePath === rootResource ? 'app' : 'component'
 
     let transpilerOptions = {
+      _options: mergedOptions,
       loaderContext: this,
-      mode: mergedOptions.mode,
       resolve: this.resolve,
       type
     }
