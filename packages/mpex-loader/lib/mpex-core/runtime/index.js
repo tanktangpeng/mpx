@@ -68,7 +68,7 @@ function makeVueRuntime (options) {
 
         // runtime
         let runtime = options.type === 'app' ? 'createApp' : 'createComponent'
-        src += `import {${runtime}} from '@mpxjs/mpex-loader/lib/mpex-core/runtime/templates/vue-runtime'\n`
+        src += `import {${runtime}} from '@mpxjs/mpex-runtime'\n`
 
         // original options
         src += rawScriptSrc + '\n'
@@ -101,14 +101,8 @@ function makeVueRuntime (options) {
 function makeMiniRuntime (options) {
   let src = '\n'
   let runtime = options.type === 'app' ? 'createApp' : 'createComponent'
-  let mode = options.mode || 'wx'
-  let runtimePackageName
-  if (mode === 'wx') {
-    runtimePackageName = 'core'
-  } else if (mode === 'ali') {
-    runtimePackageName = 'core-ant'
-  }
-  src += `import {${runtime}} from '@mpxjs/${runtimePackageName}'\n`
+
+  src += `import {${runtime}} from '@mpxjs/mpex-runtime'\n`
   src += options.rawScriptSrc + '\n'
   src += `${runtime}(options)\n`
   return src
