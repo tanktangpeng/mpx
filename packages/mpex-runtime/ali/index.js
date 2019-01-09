@@ -6,7 +6,7 @@
 import {
   createApp as rawCreateApp,
   createComponent as rawCreateComponent
-} from '@mpxjs/core'
+} from '@mpxjs/core-ant'
 
 function normalizeOptions (type, option, extendOption) {
   return Object.assign({}, option, extendOption)

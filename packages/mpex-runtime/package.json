@@ -26,5 +26,11 @@
   },
   "bugs": {
     "url": "https://github.com/didi/mpx/issues"
+  },
+  "peerDependencies": {
+    "@mpxjs/core": "^1.0.20",
+    "@mpxjs/core-ant": "^1.0.17",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2"
   }
 }
