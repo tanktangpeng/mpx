@@ -1,0 +1,25 @@
+{
+  "name": "mpex-ui",
+  "version": "1.0.0",
+  "description": "",
+  "author": "ctxrr <iamwaynehu@gmail.com>",
+  "homepage": "https://github.com/didi/mpx#readme",
+  "license": "ISC",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "http://npm.intra.xiaojukeji.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didi/mpx.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/didi/mpx/issues"
+  }
+}
