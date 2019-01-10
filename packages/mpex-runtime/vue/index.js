@@ -5,8 +5,10 @@
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import MpexUI from '@mpxjs/mpex-ui'
 
 Vue.use(VueRouter)
+Vue.use(MpexUI)
 
 function normalizeOptions (type, option, extendOption) {
   if (type === 'app') {
@@ -15,20 +17,21 @@ function normalizeOptions (type, option, extendOption) {
         routes: extendOption.routes
       })
     }
+
     if (extendOption.globalComponents) {
       Object.keys(extendOption.globalComponents).forEach(i => {
         Vue.component(i, extendOption.globalComponents[i])
       })
     }
+
     option.render = extendOption.render
+
     return option
   } else if (type === 'component') {
-    // return blabla
     option.components = extendOption.components
+
     return option
   }
-
-  return Object.assign({}, option, extendOption)
 }
 
 export function createApp (option, extendOption) {
