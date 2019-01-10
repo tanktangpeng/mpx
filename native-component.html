@@ -1,0 +1,1121 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>原生组件支持 · mpx文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="滴滴出行webapp团队">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="api.html" />
+    
+    
+    <link rel="prev" href="compilationEnhance/" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"didi","repo":"mpx","type":"star","size":"small","count":true},{"user":"didi","repo":"mpx","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="start.html">
+            
+                <a href="start.html">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="single/what-is-single-file.html">
+            
+                <a href="single/what-is-single-file.html#单文件">
+            
+                    
+                    单文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="single/what-is-single-file.html">
+            
+                <a href="single/what-is-single-file.html#介绍">
+            
+                    
+                    什么是单文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="single/what-is-single-file.html">
+            
+                <a href="single/what-is-single-file.html#编辑器ide高亮、提示">
+            
+                    
+                    编辑器/IDE配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="single/template-enhance.html">
+            
+                <a href="single/template-enhance.html#template扩展特性">
+            
+                    
+                    template扩展特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="single/template-enhance.html">
+            
+                <a href="single/template-enhance.html#class与style绑定">
+            
+                    
+                    class与style绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="single/template-enhance.html">
+            
+                <a href="single/template-enhance.html#内联事件绑定">
+            
+                    
+                    内联事件绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="single/template-enhance.html">
+            
+                <a href="single/template-enhance.html#动态组件">
+            
+                    
+                    动态组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="single/template-enhance.html">
+            
+                <a href="single/template-enhance.html#双向绑定">
+            
+                    
+                    双向绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="single/script-enhance.html">
+            
+                <a href="single/script-enhance.html#script域扩展">
+            
+                    
+                    script扩展特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="single/script-enhance.html">
+            
+                <a href="single/script-enhance.html#computed">
+            
+                    
+                    computed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="single/script-enhance.html">
+            
+                <a href="single/script-enhance.html#watch">
+            
+                    
+                    watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="single/script-enhance.html">
+            
+                <a href="single/script-enhance.html#mixins">
+            
+                    
+                    mixins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="single/script-enhance.html">
+            
+                <a href="single/script-enhance.html#页面生命周期">
+            
+                    
+                    lifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="single/style-enhance.html">
+            
+                <a href="single/style-enhance.html#style域扩展">
+            
+                    
+                    style扩展特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="single/style-enhance.html">
+            
+                <a href="single/style-enhance.html#css预处理器">
+            
+                    
+                    预处理支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="single/style-enhance.html">
+            
+                <a href="single/style-enhance.html#rpx转换">
+            
+                    
+                    rpx转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="single/json-enhance.html">
+            
+                <a href="single/json-enhance.html#json域扩展">
+            
+                    
+                    JSON扩展特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="single/json-enhance.html">
+            
+                <a href="single/json-enhance.html#packages">
+            
+                    
+                    packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="store/">
+            
+                <a href="store/#数据管理">
+            
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="store/">
+            
+                <a href="store/#开始">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="store/">
+            
+                <a href="store/#state">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="store/">
+            
+                <a href="store/#getter">
+            
+                    
+                    getter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="store/">
+            
+                <a href="store/#mutation">
+            
+                    
+                    mutation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="store/">
+            
+                <a href="store/#action">
+            
+                    
+                    action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="store/">
+            
+                <a href="store/#module">
+            
+                    
+                    子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="store/">
+            
+                <a href="store/#多实例">
+            
+                    
+                    多实例store
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="compilationEnhance/">
+            
+                <a href="compilationEnhance/">
+            
+                    
+                    构建配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="compilationEnhance/">
+            
+                <a href="compilationEnhance/#自动配置">
+            
+                    
+                    自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="compilationEnhance/">
+            
+                <a href="compilationEnhance/#手动配置">
+            
+                    
+                    手动配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="compilationEnhance/">
+            
+                <a href="compilationEnhance/#mpxjswebpack-plugin">
+            
+                    
+                    @mpxjs/webpack-plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="compilationEnhance/">
+            
+                <a href="compilationEnhance/#mpxwebpackpluginloader">
+            
+                    
+                    MpxWebpackPlugin.loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="compilationEnhance/">
+            
+                <a href="compilationEnhance/#mpxjsurl-loader">
+            
+                    
+                    @mpxjs/url-loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.4" data-path="compilationEnhance/">
+            
+                <a href="compilationEnhance/#outputfilename">
+            
+                    
+                    output.filename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.5" data-path="compilationEnhance/">
+            
+                <a href="compilationEnhance/#optimization">
+            
+                    
+                    optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="native-component.html">
+            
+                <a href="native-component.html">
+            
+                    
+                    原生组件支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    API参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="api.html">
+            
+                <a href="api.html#createapp">
+            
+                    
+                    createApp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="api.html">
+            
+                <a href="api.html#createpage">
+            
+                    
+                    createPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="api.html">
+            
+                <a href="api.html#createcomponent">
+            
+                    
+                    createComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="api.html">
+            
+                <a href="api.html#createstore">
+            
+                    
+                    createStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="api.html">
+            
+                <a href="api.html#topureobject">
+            
+                    
+                    toPureObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="api.html">
+            
+                <a href="api.html#observable">
+            
+                    
+                    observable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="api.html">
+            
+                <a href="api.html#extendobservable">
+            
+                    
+                    extendObservable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="api.html">
+            
+                <a href="api.html#watchcontext-expr-handler">
+            
+                    
+                    watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="api.html">
+            
+                <a href="api.html#mpxuse">
+            
+                    
+                    use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="api.html">
+            
+                <a href="api.html#mpxmixin">
+            
+                    
+                    mixin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="extend/">
+            
+                <a href="extend/">
+            
+                    
+                    周边工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="extend/">
+            
+                <a href="extend/#fetch">
+            
+                    
+                    fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="extend/">
+            
+                <a href="extend/#promisify">
+            
+                    
+                    promisify
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="mpx-ant.html">
+            
+                <a href="mpx-ant.html">
+            
+                    
+                    mpx-ant vs mpx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="understanding/understanding.html">
+            
+                <a href="understanding/understanding.html">
+            
+                    
+                    mpx运行机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="understanding/understanding.html">
+            
+                <a href="understanding/understanding.html#数据响应与性能优化">
+            
+                    
+                    数据响应与性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="understanding/understanding.html">
+            
+                <a href="understanding/understanding.html#编译构建">
+            
+                    
+                    编译构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="understanding/resource.html">
+            
+                <a href="understanding/resource.html#图像资源处理">
+            
+                    
+                    图像资源处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >原生组件支持</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x539F;&#x751F;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x652F;&#x6301;"><a name="&#x539F;&#x751F;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x652F;&#x6301;" class="plugin-anchor" href="#&#x539F;&#x751F;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x652F;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x751F;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x652F;&#x6301;</h1>
+<p>&#x6709;&#x4E9B;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;<code>mpx</code>&#x5DE5;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x539F;&#x751F;&#x5C0F;&#x7A0B;&#x5E8F;&#x7EC4;&#x4EF6;:</p>
+<ul>
+<li>&#x901A;&#x8FC7;<code>npm</code>&#x5F15;&#x7528;&#x5B89;&#x88C5;&#x7B2C;&#x4E09;&#x5305;</li>
+<li>&#x5C06;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x6E90;&#x7801;&#x62F7;&#x8D1D;&#x5230;&#x672C;&#x5730;<code>src</code>&#x76EE;&#x5F55;&#x4E0B;</li>
+</ul>
+<blockquote>
+<p>&#x6CE8;&#xFF1A;mpx&#x5E76;&#x4E0D;&#x9650;&#x5236;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7684;&#x683C;&#x5F0F;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x53C2;&#x8003;&#x5C0F;&#x7A0B;&#x5E8F;&#x5B98;&#x65B9;&#x7684;<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/trdparty.html" target="_blank">&#x5F00;&#x53D1;&#x7B2C;&#x4E09;&#x65B9;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;</a></p>
+</blockquote>
+<h2 id="&#x539F;&#x7406;"><a name="&#x539F;&#x7406;" class="plugin-anchor" href="#&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x7406;</h2>
+<p>&#x6839;&#x636E;<code>unsingComponents</code>&#x4E2D;&#x8BBE;&#x5B9A;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;<code>mpx</code>&#x4F1A;&#x53BB;&#x67E5;&#x627E;&#x5305;&#x7684;&#x5165;&#x53E3;js&#x6587;&#x4EF6;&#x3002;&#x7136;&#x540E;&#x63D0;&#x53D6;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;<strong>&#x76EE;&#x5F55;</strong>&#x4E2D;&#x7684;<code>js</code> <code>json</code> <code>wxss</code> <code>wxml</code>&#x8FDB;&#x884C;&#x7F16;&#x8BD1;</p>
+<p>&#x7F16;&#x8BD1;&#x5E26;&#x6765;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF0C;&#x5E38;&#x89C4;&#x7684;&#x62F7;&#x8D1D;&#x64CD;&#x4F5C;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x7684;&#x4F9D;&#x8D56;&#x7F3A;&#x5931;&#xFF0C;&#x4EE5;&#x53CA;&#x5197;&#x4F59;&#x4EE3;&#x7801;&#x88AB;&#x6253;&#x5305;&#x3002;&#x800C;&#x6267;&#x884C;&#x4E86;&#x7F16;&#x8BD1;&#xFF0C;&#x4F7F;&#x5F97;<code>mpx</code>&#x53EF;&#x4EE5;&#x7CBE;&#x786E;&#x7684;&#x6536;&#x96C6;&#x4F9D;&#x8D56;&#xFF0C;&#x8FD9;&#x8868;&#x73B0;&#x5728;&#xFF1A;</p>
+<ul>
+<li><code>js</code>&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4F9D;&#x8D56;&#x4E5F;&#x4F1A;&#x88AB;&#x6253;&#x5305;&#xFF0C;&#x6CA1;&#x6709;&#x88AB;&#x52A0;&#x8F7D;&#x7684;&#x4F9D;&#x8D56;&#x5E93;&#x4E0D;&#x4F1A;&#x6253;&#x5305;&#xFF0C;&#x51CF;&#x5C0F;&#x4F53;&#x79EF;</li>
+<li><code>json</code>&#x6587;&#x4EF6;&#x7684;<code>usingComponents</code>&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#xFF0C;&#x56E0;&#x6B64;&#x539F;&#x751F;&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x518D;&#x5F15;&#x7528;&#x5176;&#x4ED6;&#x539F;&#x751F;&#x7EC4;&#x4EF6;&#xFF0C;&#x751A;&#x81F3;&#x662F;mpx&#x7EC4;&#x4EF6;</li>
+<li><code>wxss</code>&#x4E2D;&#x5F15;&#x7528;&#x5916;&#x90E8;&#x6837;&#x5F0F;</li>
+<li><code>wxml</code>&#x4E2D;&#x7684;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x4F1A;&#x88AB;&#x6253;&#x5305;</li>
+</ul>
+<h2 id="&#x4F8B;&#x5B50;"><a name="&#x4F8B;&#x5B50;" class="plugin-anchor" href="#&#x4F8B;&#x5B50;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F8B;&#x5B50;</h2>
+<p><strong>&#x6587;&#x4EF6;&#x76EE;&#x5F55;</strong></p>
+<pre><code>  node_modules
+  |-- npm-a-wx-component // npm&#x5B89;&#x88C5;
+  |   --package.json
+  |   --src
+  |     --index.js
+  |     --index.json
+  |     --index.wxss
+  |     --index.wxml
+  |-- npm-b-wx-component // npm&#x5B89;&#x88C5;
+  |   --package.json
+  |   --src
+  |     --index.js
+  |     --index.json
+  |     --index.wxss
+  |     --index.wxml
+  component
+  &#x2502;-- container.mpx 
+  &#x2502;-- com-a.mpx 
+  |-- src-wx-component // &#x624B;&#x52A8;&#x62F7;&#x8D1D;
+  |  --index.js
+  |  --index.json
+  |  --index.wxss
+  |  --index.wxml
+</code></pre><p><strong>container.mpx</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- mpx&#x7EC4;&#x4EF6; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">com-a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">com-a</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- npm&#x5B89;&#x88C5;&#x7684;&#x539F;&#x751F;&#x7EC4;&#x4EF6; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">npm-a-wx-component</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">npm-a-wx-component</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x624B;&#x52A8;&#x62F7;&#x8D1D;&#x5230;&#x5DE5;&#x7A0B;&#x7684;&#x539F;&#x751F;&#x7EC4;&#x4EF6; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">src-wx-component</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">src-wx-component</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;application/json&quot;</span>&gt;</span><span class="actionscript">
+  <span class="hljs-string">&quot;usingComponents&quot;</span>: {
+    <span class="hljs-string">&quot;com-a&quot;</span>: <span class="hljs-string">&quot;./com-a&quot;</span>,
+    <span class="hljs-string">&quot;npm-a-wx-component&quot;</span>: <span class="hljs-string">&quot;npm-a-wx-component&quot;</span>,
+    <span class="hljs-string">&quot;src-wx-component&quot;</span>: <span class="hljs-string">&quot;./src-wx-component&quot;</span>
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p><strong>node_modules/npm-a-wx-component/src/index.wxml</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>this is a native component<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x539F;&#x751F;&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x539F;&#x751F;&#x7EC4;&#x4EF6; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">npm-b-wx-component</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">npm-b-wx-component</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<p><strong>node_modules/npm-a-wx-component/src/index.json</strong></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;usingComponents&quot;</span>: {
+    <span class="hljs-string">&quot;npm-b-wx-component&quot;</span>: <span class="hljs-string">&quot;npm-b-wx-component&quot;</span>
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="compilationEnhance/#optimization" class="navigation navigation-prev " aria-label="Previous page: optimization">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="api.html" class="navigation navigation-next " aria-label="Next page: API参考">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"原生组件支持","level":"1.10","depth":1,"next":{"title":"API参考","level":"1.11","depth":1,"path":"api.md","ref":"api.md","articles":[{"title":"createApp","level":"1.11.1","depth":2,"anchor":"#createapp","path":"api.md","ref":"api.md#createapp","articles":[]},{"title":"createPage","level":"1.11.2","depth":2,"anchor":"#createpage","path":"api.md","ref":"api.md#createpage","articles":[]},{"title":"createComponent","level":"1.11.3","depth":2,"anchor":"#createcomponent","path":"api.md","ref":"api.md#createcomponent","articles":[]},{"title":"createStore","level":"1.11.4","depth":2,"anchor":"#createstore","path":"api.md","ref":"api.md#createstore","articles":[]},{"title":"toPureObject","level":"1.11.5","depth":2,"anchor":"#topureobject","path":"api.md","ref":"api.md#topureobject","articles":[]},{"title":"observable","level":"1.11.6","depth":2,"anchor":"#observable","path":"api.md","ref":"api.md#observable","articles":[]},{"title":"extendObservable","level":"1.11.7","depth":2,"anchor":"#extendobservable","path":"api.md","ref":"api.md#extendobservable","articles":[]},{"title":"watch","level":"1.11.8","depth":2,"anchor":"#watchcontext-expr-handler","path":"api.md","ref":"api.md#watchcontext-expr-handler","articles":[]},{"title":"use","level":"1.11.9","depth":2,"anchor":"#mpxuse","path":"api.md","ref":"api.md#mpxuse","articles":[]},{"title":"mixin","level":"1.11.10","depth":2,"anchor":"#mpxmixin","path":"api.md","ref":"api.md#mpxmixin","articles":[]}]},"previous":{"title":"optimization","level":"1.9.2.5","depth":3,"anchor":"#optimization","path":"compilationEnhance/index.md","ref":"compilationEnhance/index.md#optimization","articles":[]},"dir":"ltr"},"config":{"plugins":["github","edit-link","anchors","copy-code-button","github-buttons"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/didi/mpx"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"didi","repo":"mpx","type":"star","size":"small","count":true},{"user":"didi","repo":"mpx","type":"fork","size":"small","count":true}]},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"完善文档","base":"https://github.com/didi/mpx/tree/master/docs"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"滴滴出行webapp团队","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"mpx文档","gitbook":"*"},"file":{"path":"native-component.md","mtime":"2019-01-10T04:31:31.166Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-10T04:32:48.557Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
